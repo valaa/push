@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Demo Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    .product-card { display: flex; flex-direction: column; height: 100%; }
+    .card-image img { height: 200px; object-fit: cover; }
+    #cart { margin-top: 40px; }
+  </style>
+</head>
+<body>
+<nav class="light-blue lighten-1">
+  <div class="nav-wrapper container">
+    <a href="#" class="brand-logo">Demo Shop</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#cart" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="row" id="product-list"></div>
+
+  <div id="cart" class="section">
+    <h4>Your Cart</h4>
+    <ul class="collection" id="cart-items"></ul>
+    <h5 id="cart-total"></h5>
+  </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>
